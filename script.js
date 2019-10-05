@@ -79,7 +79,7 @@ $(document).ready(function(){
       
       } else {
         $('li.selected').addClass('incorrect');
-        $('li.selected').append(`</br>yare yare, you're WRONG`);
+        $('li.selected').append(`</br>yare yare, the correct answer ${listQuestion.answers[listQuestion.correct]}`);
       }
       $('.score').text('Current Score: '+score);
       current++;
